@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b75e2886-8ed4-42a4-8ad3-126bd82d5244" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/HistoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dokumentation/Klassendiagramm_Badr.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Dokumentation/Klassendiagramm_Badr.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/DocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/AppointmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/AppointmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/ClientDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/DocumentDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/FileDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/FileDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Document.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/run/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/run/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/DataLoadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/DataLoadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/NavigationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/NavigationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/UtilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/UtilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/WindowsNaviService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/WindowsNaviService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/util/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Document.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/History.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2n6qnNeS7tBDb0pKYsDzeKBDHCa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataLoadServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/badrs/OneDrive/Desktop/WIFI/Ubungen&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\badrs\OneDrive\Desktop\CP_Project\src\main\resources\com\badr\cp_project\view" />
+      <recent name="C:\Users\badrs\OneDrive\Desktop\CP_Project\src\main\resources\com\badr\cp_project\view\view" />
+      <recent name="C:\Users\badrs\OneDrive\Desktop\CP_Project\src\main\java" />
+      <recent name="C:\Users\badrs\OneDrive\Desktop\CP_Project\src\main\resources" />
+      <recent name="C:\Users\badrs\OneDrive\Desktop\CP_Project\src\main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.badr.cp_project.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="CP_Project" />
+      <option name="PACKAGE_NAME" value="com.badr.cp_project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.badr.cp_project.service.DataLoadServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+EnableDynamicAgentLoading -Djdk.instrument.traceUsage " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b75e2886-8ed4-42a4-8ad3-126bd82d5244" name="Changes" comment="" />
+      <created>1728304040561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728304040561</updated>
+    </task>
+    <servers />
+  </component>
+</project>
