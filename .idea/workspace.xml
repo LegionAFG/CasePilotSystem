@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75e2886-8ed4-42a4-8ad3-126bd82d5244" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/HistoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dokumentation/Klassendiagramm_Badr.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Dokumentation/Klassendiagramm_Badr.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/DocumentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/AppointmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/AppointmentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/ClientDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/DocumentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/FileDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/dao/FileDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/Document.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/model/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/run/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/run/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/DataLoadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/DataLoadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/NavigationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/NavigationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/UtilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/UtilityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/WindowsNaviService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/service/WindowsNaviService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/util/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/badr/cp_project/database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Document.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/History.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +58,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/badrs/OneDrive/Desktop/WIFI/Ubungen&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/badrs/OneDrive/Desktop/WIFI/Projek_Arbeit_Badr/CP_Project_System&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>

@@ -25,10 +25,12 @@ public class DataLoadService {
     private final UtilityService utilityService;
 
     public DataLoadService(UtilityService utilityService) {
+
         this.utilityService = utilityService;
     }
 
     private <T> ObservableList<T> toObservableList(List<T> list) {
+
         return FXCollections.observableArrayList(list);
     }
 

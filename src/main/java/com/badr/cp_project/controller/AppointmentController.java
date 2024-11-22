@@ -36,15 +36,15 @@ public class AppointmentController {
     @FXML
     private TextField appointmantIfaTextField;
     @FXML
-    private TextField  appointmentLastNameField;
+    private TextField appointmentLastNameField;
     @FXML
     private TextField appointmentFirstNameField;
     @FXML
-    private TextField  appointmantAdressTextField;
+    private TextField appointmantAdressTextField;
     @FXML
     private TextField appointmentInstitutionField;
     @FXML
-    private TextField   appointmentTimeField;
+    private TextField appointmentTimeField;
     @FXML
     private DatePicker appointmantDatePicker;
     @FXML
@@ -58,7 +58,7 @@ public class AppointmentController {
     @FXML
     private TableColumn<Appointment, String> statusColumn;
     @FXML
-    private TableColumn<Appointment, String>  priorityColumn;
+    private TableColumn<Appointment, String> priorityColumn;
     @FXML
     private TableColumn<Appointment, LocalDate> dateColumn;
     @FXML
@@ -82,7 +82,7 @@ public class AppointmentController {
         initializeAppointmentTable();
         loadAllAppointmentIntoTable();
 
-        appointmantTableView.getSelectionModel().selectedItemProperty().addListener((ignored , ignored2 , newAppointment) ->
+        appointmantTableView.getSelectionModel().selectedItemProperty().addListener((ignored, ignored2, newAppointment) ->
                 appointmentSelected(newAppointment)
         );
     }
@@ -173,7 +173,9 @@ public class AppointmentController {
                 logger.log(Level.FINE, String.format("Termin erfolgreich aktualisiert für Klient: %s %s", lastNameFieldText, firstNameFieldText));
             }
         } else {
-            Appointment neuerTermin = new Appointment(ifaTextFieldText, adressTextFieldText, institutionFieldText, datePickerValue, priorityChoiceBoxValue, "Offen", localTime, lastNameFieldText, firstNameFieldText);
+            Appointment neuerTermin = new Appointment(ifaTextFieldText, adressTextFieldText, institutionFieldText, datePickerValue,
+                    priorityChoiceBoxValue, "Offen", localTime, lastNameFieldText, firstNameFieldText);
+
             dataLoadService.saveAppointment(neuerTermin, terminDAO);
 
 
@@ -222,7 +224,7 @@ public class AppointmentController {
 
             int terminId = selectedTermin.getAppointmentId();
             dataLoadService.deleteAppointmentById(terminId, terminDAO);
-            logger.log(Level.INFO,"Termin wurde erfolgreich gelöscht.");
+            logger.log(Level.INFO, "Termin wurde erfolgreich gelöscht.");
             loadAllAppointmentIntoTable();
         }
     }
