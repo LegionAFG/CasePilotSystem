@@ -19,6 +19,7 @@ public class WindowsNaviService {
     private static final Logger LOGGER = Logger.getLogger(WindowsNaviService.class.getName());
 
 
+    private static Scene mainScene;
 
     public enum Page {
         CLIENT("/com/badr/cp_project/Client.fxml"),
@@ -30,12 +31,10 @@ public class WindowsNaviService {
         private final String fxmlPath;
 
         Page(String fxmlPath) {
-
             this.fxmlPath = fxmlPath;
         }
 
         public String getFxmlPath() {
-
             return fxmlPath;
         }
     }
@@ -44,7 +43,6 @@ public class WindowsNaviService {
         String fxmlPath = page.getFxmlPath();
 
         try {
-
             FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource(fxmlPath));
             Parent root = fxmlLoader.load();
 
@@ -53,11 +51,18 @@ public class WindowsNaviService {
                 controllerConsumer.accept(controller);
             }
 
-            Scene scene = new Scene(root);
-            stage.setTitle("CasePilot - " + page.name());
-            stage.setScene(scene);
-            stage.show();
-            stage.setResizable(false);
+
+            if (mainScene != null) {
+
+                mainScene.setRoot(root);
+                stage.setTitle("CasePilot - " + page.name());
+            } else {
+                mainScene = new Scene(root, 1000, 800);
+                stage.setScene(mainScene);
+                stage.setResizable(true);
+                stage.setTitle("CasePilot - " + page.name());
+                stage.show();
+            }
 
             LOGGER.log(Level.INFO, "Seite erfolgreich geladen: {0}", page.name());
         } catch (IOException e) {

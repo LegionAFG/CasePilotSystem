@@ -15,8 +15,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.FileController">
-    <AnchorPane layoutX="-1.0" prefHeight="64.0" prefWidth="1920.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+<AnchorPane prefHeight="1082.0" prefWidth="1707.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.FileController">
+    <AnchorPane layoutX="-1.0" prefHeight="64.0" prefWidth="1701.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="7.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="CasePilot" textFill="#e9ebee">
             <font>
                 <Font name="Comic Sans MS Bold" size="36.0" />
@@ -86,12 +86,12 @@
             </InnerShadow>
         </effect>
     </AnchorPane>
-    <AnchorPane layoutX="275.0" layoutY="66.0" prefHeight="1016.0" prefWidth="1643.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <TableView fx:id="fileTableView" layoutY="65.0" prefHeight="927.0" prefWidth="1637.0">
+    <AnchorPane layoutX="275.0" layoutY="66.0" prefHeight="1016.0" prefWidth="1426.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <TableView fx:id="fileTableView" layoutY="65.0" prefHeight="927.0" prefWidth="1367.0">
             <columns>
                 <TableColumn fx:id="dateUploadColumn" prefWidth="105.0" text="Datum" />
-                <TableColumn fx:id="fileNameColumn" prefWidth="1399.9999389648438" text="Dateiname" />
-                <TableColumn fx:id="fileTypColumn" prefWidth="91.2001953125" text="Datentyp" />
+                <TableColumn fx:id="fileNameColumn" prefWidth="453.5999755859375" text="Dateiname" />
+                <TableColumn fx:id="fileTypColumn" prefWidth="686.3999633789062" text="Datentyp" />
             </columns>
         </TableView>
         <Label layoutX="7.0" layoutY="8.0" text="Dokumente" textFill="WHITE">

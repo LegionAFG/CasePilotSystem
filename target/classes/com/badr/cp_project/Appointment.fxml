@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.AppointmentController">
+<AnchorPane prefHeight="1082.0" prefWidth="1649.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.AppointmentController">
     <effect>
         <DropShadow />
     </effect>
@@ -99,7 +99,7 @@
                     <DropShadow />
                 </effect>
             </Button>
-            <Button  alignment="CENTER" contentDisplay="CENTER" maxWidth="245.0" minHeight="42.0" minWidth="20.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="50.0" prefWidth="245.0" style="-fx-background-color: #8b9dc3;" text="Home" textAlignment="CENTER" textFill="WHITE">
+            <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="245.0" minHeight="42.0" minWidth="20.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="50.0" prefWidth="245.0" style="-fx-background-color: #8b9dc3;" text="Home" textAlignment="CENTER" textFill="WHITE">
                 <font>
                     <Font name="Comic Sans MS Bold" size="24.0" />
                 </font>
@@ -109,7 +109,7 @@
             </Button>
         </VBox>
     </AnchorPane>
-    <AnchorPane layoutX="375.0" prefHeight="1082.0" prefWidth="1544.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="375.0" prefHeight="1082.0" prefWidth="1274.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <effect>
             <InnerShadow>
                 <color>
@@ -117,14 +117,14 @@
                 </color>
             </InnerShadow>
         </effect>
-        <TableView fx:id="appointmantTableView" layoutY="51.0" prefHeight="935.0" prefWidth="1462.0">
+        <TableView fx:id="appointmantTableView" layoutY="51.0" prefHeight="935.0" prefWidth="1187.0">
             <columns>
                 <TableColumn fx:id="dateColumn" prefWidth="131.199951171875" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
                 <TableColumn fx:id="timeColumn" prefWidth="116.800048828125" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
-                <TableColumn fx:id="addressColumn" prefWidth="671.2000122070312" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
-                <TableColumn fx:id="institutionColumn" prefWidth="294.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Instution" />
-                <TableColumn fx:id="priorityColumn" prefWidth="100.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
-            <TableColumn fx:id="statusColumn" prefWidth="103.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
+                <TableColumn fx:id="addressColumn" prefWidth="316.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
+                <TableColumn fx:id="institutionColumn" prefWidth="283.20001220703125" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Instution" />
+                <TableColumn fx:id="priorityColumn" prefWidth="154.4000244140625" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
+            <TableColumn fx:id="statusColumn" prefWidth="142.39990234375" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
             </columns>
         </TableView>
         <Label layoutX="657.0" text=" Termine" textFill="WHITE">
