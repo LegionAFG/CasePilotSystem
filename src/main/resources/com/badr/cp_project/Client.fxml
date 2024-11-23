@@ -10,18 +10,14 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1068.0" prefWidth="1488.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.ClientController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.ClientController">
     <!-- Top Action Bar -->
-    <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1488.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <Button layoutX="350.0" layoutY="13.0" mnemonicParsing="false" onAction="#onDocumentButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #8b9dc3;" text="Historie +" textFill="WHITE">
+    <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1078.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <Button layoutX="280.0" layoutY="13.0" mnemonicParsing="false" onAction="#onDocumentButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #8b9dc3;" text="Historie +" textFill="WHITE">
             <font>
                 <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
@@ -29,7 +25,7 @@
                 <DropShadow />
             </effect>
         </Button>
-        <Button layoutX="576.0" layoutY="13.0" mnemonicParsing="false" onAction="#onFileButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #8b9dc3;" text="Datei +" textFill="WHITE">
+        <Button layoutX="506.0" layoutY="13.0" mnemonicParsing="false" onAction="#onFileButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #8b9dc3;" text="Datei +" textFill="WHITE">
             <font>
                 <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
@@ -37,7 +33,7 @@
                 <DropShadow />
             </effect>
         </Button>
-        <Button layoutX="801.0" layoutY="13.0" mnemonicParsing="false" onAction="#onAppointmentButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #d8b359;" text="Termin +" textFill="WHITE">
+        <Button layoutX="731.0" layoutY="13.0" mnemonicParsing="false" onAction="#onAppointmentButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #d8b359;" text="Termin +" textFill="WHITE">
             <font>
                 <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
@@ -56,25 +52,13 @@
     </AnchorPane>
 
     <!-- Left Panel -->
-    <AnchorPane layoutX="-1.0" layoutY="76.0" prefHeight="989.0" prefWidth="337.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <ImageView fitHeight="248.0" fitWidth="261.0" layoutX="42.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-
-            <effect>
-                <DropShadow>
-                    <color>
-                        <Color red="0.16078431904315948" green="0.2823529541492462" blue="0.4901960790157318" />
-                    </color>
-                </DropShadow>
-            </effect>
-            <Image url="@icons/klient.png" />
-        </ImageView>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-5.0" layoutY="226.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Klient" textFill="#e9ebee">
+    <AnchorPane layoutX="-1.0" layoutY="76.0" prefHeight="774.0" prefWidth="342.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Klient" textFill="#e9ebee">
             <font>
                 <Font name="Comic Sans MS Bold" size="36.0" />
             </font>
         </Label>
-        <Line endX="148.0" layoutX="166.0" layoutY="277.0" startX="-141.0" stroke="#f8f3f3" strokeWidth="5.0" />
-        <VBox layoutX="50.0" layoutY="288.0" prefHeight="650.0" prefWidth="233.0" spacing="10">
+        <VBox layoutX="55.0" layoutY="51.0" prefHeight="615.0" prefWidth="234.0" spacing="10">
             <Label fx:id="clientIfaNumber" alignment="CENTER" prefHeight="51.0" prefWidth="241.0" style="-fx-background-color: white;" textFill="#0d0d0d">
                 <font>
                     <Font name="Comic Sans MS Bold" size="24.0" />
@@ -169,13 +153,13 @@
     </AnchorPane>
 
     <!-- Dokumentationen Panel -->
-    <AnchorPane layoutX="343.0" layoutY="76.0" prefHeight="246.0" prefWidth="1142.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <TableView fx:id="documentTableView" layoutY="65.0" prefHeight="180.0" prefWidth="1126.0">
+    <AnchorPane layoutX="344.0" layoutY="76.0" prefHeight="224.0" prefWidth="734.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <TableView fx:id="documentTableView" layoutY="42.0" prefHeight="180.0" prefWidth="734.0">
             <columns>
                 <TableColumn fx:id="documentDateColumn" prefWidth="75.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
                 <TableColumn fx:id="documentTimeColumn" prefWidth="75.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
                 <TableColumn fx:id="documentTitelColumn" prefWidth="174.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Titel" />
-                <TableColumn fx:id="documentDescriptionColumn" prefWidth="418.39996337890625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beschreibung" />
+                <TableColumn fx:id="documentDescriptionColumn" prefWidth="294.39990234375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beschreibung" />
             </columns>
             <effect>
                 <DropShadow />
@@ -183,7 +167,7 @@
         </TableView>
         <Label layoutX="322.0" layoutY="7.0" text="Historie" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
         <effect>
@@ -192,17 +176,17 @@
     </AnchorPane>
 
     <!-- Dokumente Panel -->
-    <AnchorPane layoutX="343.0" layoutY="322.0" prefHeight="287.0" prefWidth="1142.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="343.0" layoutY="300.0" prefHeight="256.0" prefWidth="734.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label layoutX="284.0" text="Dokumente" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
-        <TableView fx:id="fileTableView" layoutY="63.0" prefHeight="224.0" prefWidth="1126.0">
+        <TableView fx:id="fileTableView" layoutY="35.0" prefHeight="224.0" prefWidth="734.0">
             <columns>
                 <TableColumn fx:id="fileUploadColumn" prefWidth="75.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
-                <TableColumn fx:id="fileNameColumn" prefWidth="525.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
-                <TableColumn fx:id="fileTypColumn" prefWidth="159.999755859375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Dateityp" />
+                <TableColumn fx:id="fileNameColumn" prefWidth="348.8000183105469" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
+                <TableColumn fx:id="fileTypColumn" prefWidth="202.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Dateityp" />
             </columns>
             <effect>
                 <DropShadow />
@@ -214,20 +198,20 @@
     </AnchorPane>
 
     <!-- Termine Panel -->
-    <AnchorPane layoutX="343.0" layoutY="609.0" prefHeight="459.0" prefWidth="1142.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="343.0" layoutY="556.0" prefHeight="296.0" prefWidth="724.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label layoutX="317.0" text="Termine" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
-        <TableView fx:id="appointmentTableView" layoutY="59.0" prefHeight="395.0" prefWidth="1126.0">
+        <TableView fx:id="appointmentTableView" layoutY="35.0" prefHeight="256.0" prefWidth="734.0">
             <columns>
                 <TableColumn fx:id="clientDateColumn" prefWidth="75.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
                 <TableColumn fx:id="clientTimeColumn" prefWidth="75.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
                 <TableColumn fx:id="clientInstitutionColumn" prefWidth="125.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Institution" />
-                <TableColumn fx:id="clientAdressColumn" prefWidth="321.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
-                <TableColumn fx:id="clientPriorityColumn" prefWidth="88.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Prioriät" />
-                <TableColumn fx:id="clientStatusColumn" prefWidth="77.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
+                <TableColumn fx:id="clientAdressColumn" prefWidth="150.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
+                <TableColumn fx:id="clientPriorityColumn" prefWidth="134.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Prioriät" />
+                <TableColumn fx:id="clientStatusColumn" prefWidth="64.800048828125" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
             </columns>
             <effect>
                 <DropShadow />

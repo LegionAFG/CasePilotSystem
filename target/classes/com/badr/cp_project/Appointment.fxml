@@ -13,14 +13,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1082.0" prefWidth="1649.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.AppointmentController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.AppointmentController">
     <effect>
         <DropShadow />
     </effect>
-    <AnchorPane layoutX="-1.0" prefHeight="1082.0" prefWidth="370.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="-1.0" prefHeight="798.0" prefWidth="288.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <effect>
             <InnerShadow>
                 <color>
@@ -28,28 +27,12 @@
                 </color>
             </InnerShadow>
         </effect>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="31.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Terminplaner" textFill="#e9ebee">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="14.0" prefHeight="51.0" prefWidth="211.0" style="-fx-background-radius: 15;" text="Terminplaner" textFill="#e9ebee">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
-        <Line endX="134.0" layoutX="182.0" layoutY="82.0" startX="-124.0" stroke="#fcf8f8" strokeWidth="5.0" />
-        <VBox layoutX="67.0" layoutY="106.0" prefHeight="882.0" prefWidth="239.0" spacing="20">
-            <TextField fx:id="appointmantIfaTextField" prefHeight="51.0" prefWidth="212.0" promptText="IFA:">
-                <font>
-                    <Font name="Comic Sans MS" size="24.0" />
-                </font>
-            </TextField>
-            <TextField fx:id="appointmentLastNameField" prefHeight="51.0" prefWidth="212.0" promptText="Name:">
-                <font>
-                    <Font name="Comic Sans MS" size="24.0" />
-                </font>
-            </TextField>
-            <TextField fx:id="appointmentFirstNameField" prefHeight="51.0" prefWidth="212.0" promptText="Vorname:">
-                <font>
-                    <Font name="Comic Sans MS" size="24.0" />
-                </font>
-            </TextField>
+        <VBox layoutX="27.0" layoutY="76.0" prefHeight="646.0" prefWidth="239.0" spacing="20">
             <TextField fx:id="appointmentInstitutionField" prefHeight="51.0" prefWidth="212.0" promptText="Institution:">
                 <font>
                     <Font name="Comic Sans MS" size="24.0" />
@@ -109,7 +92,7 @@
             </Button>
         </VBox>
     </AnchorPane>
-    <AnchorPane layoutX="375.0" prefHeight="1082.0" prefWidth="1274.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="287.0" layoutY="1.0" prefHeight="798.0" prefWidth="783.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <effect>
             <InnerShadow>
                 <color>
@@ -117,20 +100,35 @@
                 </color>
             </InnerShadow>
         </effect>
-        <TableView fx:id="appointmantTableView" layoutY="51.0" prefHeight="935.0" prefWidth="1187.0">
+        <TableView fx:id="appointmantTableView" layoutY="51.0" prefHeight="743.0" prefWidth="804.0">
             <columns>
-                <TableColumn fx:id="dateColumn" prefWidth="131.199951171875" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
-                <TableColumn fx:id="timeColumn" prefWidth="116.800048828125" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
-                <TableColumn fx:id="addressColumn" prefWidth="316.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
-                <TableColumn fx:id="institutionColumn" prefWidth="283.20001220703125" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Instution" />
-                <TableColumn fx:id="priorityColumn" prefWidth="154.4000244140625" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
-            <TableColumn fx:id="statusColumn" prefWidth="142.39990234375" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
+                <TableColumn fx:id="dateColumn" prefWidth="95.199951171875" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
+                <TableColumn fx:id="timeColumn" prefWidth="70.39993286132812" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
+                <TableColumn fx:id="addressColumn" prefWidth="141.5999755859375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
+                <TableColumn fx:id="institutionColumn" prefWidth="144.7999267578125" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Instution" />
+                <TableColumn fx:id="priorityColumn" prefWidth="140.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
+            <TableColumn fx:id="statusColumn" prefWidth="100.8001708984375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
             </columns>
         </TableView>
-        <Label layoutX="657.0" text=" Termine" textFill="WHITE">
+        <Label layoutY="7.0" text=" Termine" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
+         <TextField fx:id="appointmantIfaTextField" layoutX="112.0" layoutY="5.0" prefHeight="34.0" prefWidth="155.0" promptText="IFA:">
+             <font>
+                 <Font name="Comic Sans MS" size="18.0" />
+             </font>
+         </TextField>
+      <TextField fx:id="appointmentFirstNameField" layoutX="441.0" layoutY="5.0" prefHeight="34.0" prefWidth="155.0" promptText="Vorname">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="appointmentLastNameField" layoutX="277.0" layoutY="5.0" prefHeight="34.0" prefWidth="155.0" promptText="Name">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </TextField>
     </AnchorPane>
 </AnchorPane>

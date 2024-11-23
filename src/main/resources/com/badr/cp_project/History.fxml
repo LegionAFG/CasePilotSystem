@@ -14,34 +14,34 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1084.0" prefWidth="1634.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HistoryController">
-    <AnchorPane layoutX="-3.0" prefHeight="714.0" prefWidth="325.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-19.0" layoutY="75.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Historie" textFill="#e9ebee">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HistoryController">
+    <AnchorPane layoutX="-3.0" prefHeight="642.0" prefWidth="326.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-19.0" layoutY="40.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Historie" textFill="#e9ebee">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
-        <Line endX="134.0" layoutX="147.0" layoutY="140.0" startX="-124.0" stroke="#fcf8f8" strokeWidth="5.0" />
-        <VBox layoutX="21.0" layoutY="203.0" prefHeight="510.0" prefWidth="263.0" spacing="20.0">
+        <Line endX="134.0" layoutX="158.0" layoutY="94.0" startX="-124.0" stroke="#fcf8f8" strokeWidth="5.0" />
+        <VBox layoutX="31.0" layoutY="151.0" prefHeight="646.0" prefWidth="263.0" spacing="20.0">
             <TextField fx:id="historyClientIfaNumberField" prefHeight="51.0" prefWidth="212.0">
                 <font>
-                    <Font name="Comic Sans MS" size="24.0" />
+                    <Font name="Comic Sans MS" size="18.0" />
                 </font>
             </TextField>
-            <DatePicker fx:id="historyDatePicker" prefHeight="53.0" prefWidth="263.0" style="-fx-font-size: 24;" />
+            <DatePicker fx:id="historyDatePicker" prefHeight="53.0" prefWidth="263.0" style="-fx-font-size: 18;" />
             <TextField fx:id="historyTimeField" prefHeight="51.0" prefWidth="212.0" promptText="Uhrzeit:">
                 <font>
-                    <Font name="Comic Sans MS" size="24.0" />
+                    <Font name="Comic Sans MS" size="18.0" />
                 </font>
             </TextField>
             <TextField fx:id="historyTitelField" prefHeight="51.0" prefWidth="212.0" promptText="Titel:">
                 <font>
-                    <Font name="Comic Sans MS" size="24.0" />
+                    <Font name="Comic Sans MS" size="18.0" />
                 </font>
             </TextField>
             <Button mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="51.0" prefWidth="267.0" style="-fx-background-color: #8b9dc3;" text="Speichern" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -49,7 +49,7 @@
             </Button>
             <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="51.0" prefWidth="266.0" style="-fx-background-color: #981b1e;" text="Doku löschen" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -57,7 +57,7 @@
             </Button>
             <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="264.0" minHeight="42.0" minWidth="20.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="50.0" prefWidth="264.0" style="-fx-background-color: #8b9dc3;" text="Home" textAlignment="CENTER" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -72,13 +72,13 @@
             </DropShadow>
         </effect>
     </AnchorPane>
-    <AnchorPane layoutY="717.0" prefHeight="367.0" prefWidth="1638.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+    <AnchorPane layoutX="325.0" layoutY="426.0" prefHeight="372.0" prefWidth="673.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label layoutX="14.0" layoutY="7.0" text="Beschreibung" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
-        <TextArea fx:id="historyDescriptionTextArea" layoutX="-4.0" layoutY="66.0" prefHeight="296.0" prefWidth="1623.0">
+        <TextArea fx:id="historyDescriptionTextArea" layoutX="1.0" layoutY="64.0" prefHeight="308.0" prefWidth="667.0">
             <effect>
                 <DropShadow />
             </effect></TextArea>
@@ -90,13 +90,13 @@
             </DropShadow>
         </effect>
     </AnchorPane>
-    <AnchorPane layoutX="325.0" prefHeight="714.0" prefWidth="1314.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <TableView fx:id="historyTableView" layoutX="-2.0" layoutY="71.0" prefHeight="642.0" prefWidth="1294.0">
+    <AnchorPane layoutX="325.0" prefHeight="426.0" prefWidth="674.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <TableView fx:id="historyTableView" layoutX="-2.0" layoutY="87.0" prefHeight="322.0" prefWidth="667.0">
             <columns>
-                <TableColumn fx:id="historyLocalDateTableColumn" prefWidth="98.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
-                <TableColumn fx:id="historyLocalTimeTableColumn" prefWidth="70.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
-                <TableColumn fx:id="historyStringTableColumn" prefWidth="544.7998657226562" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Titel" />
-                <TableColumn fx:id="historyStringTableColumn1" prefWidth="550.4000244140625" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beschreibung" />
+                <TableColumn fx:id="historyLocalDateTableColumn" prefWidth="98.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
+                <TableColumn fx:id="historyLocalTimeTableColumn" prefWidth="70.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
+                <TableColumn fx:id="historyStringTableColumn" prefWidth="196.00003051757812" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Titel" />
+                <TableColumn fx:id="historyStringTableColumn1" prefWidth="290.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beschreibung" />
             </columns>
             <effect>
                 <DropShadow />
@@ -104,7 +104,7 @@
         </TableView>
         <Label layoutX="14.0" layoutY="7.0" text="Historie" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
         <effect>

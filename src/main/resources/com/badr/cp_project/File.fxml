@@ -15,8 +15,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1082.0" prefWidth="1707.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.FileController">
-    <AnchorPane layoutX="-1.0" prefHeight="64.0" prefWidth="1701.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.FileController">
+    <AnchorPane layoutX="-1.0" prefHeight="64.0" prefWidth="1000.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="7.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="CasePilot" textFill="#e9ebee">
             <font>
                 <Font name="Comic Sans MS Bold" size="36.0" />
@@ -26,8 +26,8 @@
             <DropShadow />
         </effect>
     </AnchorPane>
-    <AnchorPane layoutX="-1.0" layoutY="66.0" prefHeight="1016.0" prefWidth="272.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <ImageView fitHeight="248.0" fitWidth="244.0" layoutX="14.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+    <AnchorPane layoutX="-1.0" layoutY="66.0" prefHeight="686.0" prefWidth="272.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <ImageView fitHeight="161.0" fitWidth="194.0" layoutX="56.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@icons/doku.png" />
             <effect>
                 <DropShadow />
@@ -35,19 +35,19 @@
         </ImageView>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="246.0" prefHeight="51.0" prefWidth="160.0" style="-fx-background-radius: 15;" text="Datei" textFill="#e9ebee">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
         <Line endX="107.0" layoutX="144.0" layoutY="299.0" startX="-124.0" stroke="#fcf8f8" strokeWidth="5.0" />
         <VBox layoutX="19.0" layoutY="330.0" prefHeight="495.0" prefWidth="233.0" spacing="20">
             <TextField fx:id="fileClientIfaNumberField" prefHeight="51.0" prefWidth="212.0" promptText="IFA:">
                 <font>
-                    <Font name="Comic Sans MS" size="24.0" />
+                    <Font name="Comic Sans MS" size="18.0" />
                 </font>
             </TextField>
             <Button mnemonicParsing="false" onAction="#onUploadButtonClick" prefHeight="51.0" prefWidth="312.0" style="-fx-background-color: #ffc300#ffc300b;" text="Hochladen" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -55,7 +55,7 @@
             </Button>
             <Button mnemonicParsing="false" onAction="#onDownloadButtonClick" prefHeight="51.0" prefWidth="296.0" style="-fx-background-color: #44bec7;" text="Herunterladen" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -63,7 +63,7 @@
             </Button>
             <Button mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="51.0" prefWidth="308.0" style="-fx-background-color: #981b1e;" text="Datei löschen" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -71,7 +71,7 @@
             </Button>
             <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="306.0" minHeight="42.0" minWidth="20.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="50.0" prefWidth="306.0" style="-fx-background-color: #8b9dc3;" text="Home" textAlignment="CENTER" textFill="WHITE">
                 <font>
-                    <Font name="Comic Sans MS Bold" size="24.0" />
+                    <Font name="Comic Sans MS Bold" size="18.0" />
                 </font>
                 <effect>
                     <DropShadow />
@@ -86,17 +86,17 @@
             </InnerShadow>
         </effect>
     </AnchorPane>
-    <AnchorPane layoutX="275.0" layoutY="66.0" prefHeight="1016.0" prefWidth="1426.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
-        <TableView fx:id="fileTableView" layoutY="65.0" prefHeight="927.0" prefWidth="1367.0">
+    <AnchorPane layoutX="275.0" layoutY="66.0" prefHeight="826.0" prefWidth="724.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
+        <TableView fx:id="fileTableView" layoutY="65.0" prefHeight="754.0" prefWidth="715.0">
             <columns>
                 <TableColumn fx:id="dateUploadColumn" prefWidth="105.0" text="Datum" />
-                <TableColumn fx:id="fileNameColumn" prefWidth="453.5999755859375" text="Dateiname" />
-                <TableColumn fx:id="fileTypColumn" prefWidth="686.3999633789062" text="Datentyp" />
+                <TableColumn fx:id="fileNameColumn" prefWidth="395.199951171875" text="Dateiname" />
+                <TableColumn fx:id="fileTypColumn" prefWidth="206.4000244140625" text="Datentyp" />
             </columns>
         </TableView>
         <Label layoutX="7.0" layoutY="8.0" text="Dokumente" textFill="WHITE">
             <font>
-                <Font name="Comic Sans MS Bold" size="36.0" />
+                <Font name="Comic Sans MS Bold" size="24.0" />
             </font>
         </Label>
         <effect>

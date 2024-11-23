@@ -14,10 +14,10 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1100.0" prefWidth="1797.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HomeController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HomeController">
   <!-- Header -->
-  <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="75.0" prefWidth="299.0" style="-fx-background-color: #365899;">
-    <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" prefHeight="51.0" prefWidth="259.0" text="CasePilot" textFill="#e9ebee">
+  <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="75.0" prefWidth="222.0" style="-fx-background-color: #365899;">
+    <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" prefHeight="51.0" prefWidth="190.0" text="CasePilot" textFill="#e9ebee">
       <font>
         <Font name="Comic Sans MS Bold" size="36.0" />
       </font>
@@ -32,8 +32,8 @@
   </AnchorPane>
 
   <!-- Left Sidebar -->
-  <AnchorPane layoutX="-1.0" layoutY="76.0" prefHeight="1024.0" prefWidth="299.0" style="-fx-background-color: #365899;">
-    <ImageView fitHeight="248.0" fitWidth="261.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+  <AnchorPane layoutX="-1.0" layoutY="76.0" prefHeight="722.0" prefWidth="226.0" style="-fx-background-color: #365899;">
+    <ImageView fitHeight="166.0" fitWidth="140.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
 
       <effect>
         <DropShadow>
@@ -44,16 +44,16 @@
       </effect>
       <Image url="@icons/home.png" />
     </ImageView>
-    <TextField fx:id="searchField" alignment="CENTER" layoutX="20.0" layoutY="339.0" prefHeight="60.0" prefWidth="259.0" promptText="Klienten suche...">
+    <TextField fx:id="searchField" alignment="CENTER" layoutX="30.0" layoutY="203.0" prefHeight="38.0" prefWidth="166.0" promptText="Klienten suche...">
       <font>
-        <Font name="Comic Sans MS Bold" size="24.0" />
+        <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
     </TextField>
 
     <!-- Navigation Buttons -->
-    <Button layoutX="20.0" layoutY="420.0" mnemonicParsing="false" onAction="#onClientButtonClick" prefHeight="60.0" prefWidth="259.0" style="-fx-background-color: #8b9dc3;" text="Klienten anlegen" textFill="WHITE">
+    <Button layoutX="30.0" layoutY="249.0" mnemonicParsing="false" onAction="#onClientButtonClick" prefHeight="38.0" prefWidth="166.0" style="-fx-background-color: #8b9dc3;" text="Klienten anlegen" textFill="WHITE">
       <font>
-        <Font name="Comic Sans MS Bold" size="24.0" />
+        <Font name="Comic Sans MS Bold" size="18.0" />
       </font>
       <effect>
         <DropShadow>
@@ -63,12 +63,12 @@
         </DropShadow>
       </effect>
     </Button>
-    <Label alignment="CENTER" layoutY="264.0" prefHeight="51.0" prefWidth="299.0" text="Home" textFill="#e9ebee">
+    <Label alignment="CENTER" layoutX="34.0" layoutY="141.0" prefHeight="51.0" prefWidth="143.0" text="Home" textFill="#e9ebee">
       <font>
-        <Font name="Comic Sans MS Bold" size="36.0" />
+        <Font name="Comic Sans MS Bold" size="24.0" />
       </font>
     </Label>
-    <Line endX="134.0" layoutX="141.0" layoutY="315.0" startX="-124.0" stroke="#fcf8f8" strokeWidth="5.0" />
+    <Line endX="77.60000610351562" layoutX="104.0" layoutY="192.0" startX="-69.9999771118164" startY="0.20001220703125" stroke="#fcf8f8" strokeWidth="5.0" />
     <effect>
       <DropShadow>
         <color>
@@ -79,27 +79,27 @@
   </AnchorPane>
 
   <!-- Appointments Table -->
-  <AnchorPane layoutX="301.0" prefHeight="504.0" prefWidth="1497.0" style="-fx-background-color: #365899;">
-    <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="51.0" prefHeight="444.0" prefWidth="1488.0">
+  <AnchorPane layoutX="225.0" prefHeight="348.0" prefWidth="954.0" style="-fx-background-color: #365899;">
+    <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="51.0" prefHeight="259.0" prefWidth="860.0">
       <columns>
-        <TableColumn fx:id="appointmentIfaColumn" prefWidth="152.79983520507812" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="IFA" />
-        <TableColumn fx:id="appointmentClientLastnameColumn" prefWidth="156.7999267578125" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
-        <TableColumn fx:id="appointmentClientFirstnameColumn" prefWidth="170.4000244140625" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Vorname" />
-        <TableColumn fx:id="appointmentDateColumn" prefWidth="117.60009765625" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
-        <TableColumn fx:id="appointmentTimeColumn" prefWidth="97.5999755859375" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
-        <TableColumn fx:id="appointmentAddressColumn" prefWidth="271.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
+        <TableColumn fx:id="appointmentIfaColumn" prefWidth="88.00001525878906" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="IFA" />
+        <TableColumn fx:id="appointmentClientLastnameColumn" prefWidth="86.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
+        <TableColumn fx:id="appointmentClientFirstnameColumn" prefWidth="96.800048828125" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Vorname" />
+        <TableColumn fx:id="appointmentDateColumn" prefWidth="71.2000732421875" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Datum" />
+        <TableColumn fx:id="appointmentTimeColumn" prefWidth="61.60009765625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Uhrzeit" />
+        <TableColumn fx:id="appointmentAddressColumn" prefWidth="140.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Adresse" />
 
-        <TableColumn fx:id="appointmentInstitutionColumn" minWidth="3.199951171875" prefWidth="259.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Institution" />
-        <TableColumn fx:id="appointmentPriorityColumn" prefWidth="104.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
-        <TableColumn fx:id="appointmentStatusColumn" prefWidth="122.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
+        <TableColumn fx:id="appointmentInstitutionColumn" minWidth="3.199951171875" prefWidth="116.0001220703125" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Institution" />
+        <TableColumn fx:id="appointmentPriorityColumn" prefWidth="96.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Priorität" />
+        <TableColumn fx:id="appointmentStatusColumn" prefWidth="85.60003662109375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Status" />
       </columns>
       <effect>
         <DropShadow />
       </effect>
     </TableView>
-    <Label layoutX="657.0" prefWidth="140.0" text="Termine" textFill="WHITE">
+    <Label layoutX="14.0" prefWidth="140.0" text="Termine" textFill="WHITE">
       <font>
-        <Font name="Comic Sans MS Bold" size="36.0" />
+        <Font name="Comic Sans MS Bold" size="24.0" />
       </font>
     </Label>
     <effect>
@@ -112,21 +112,21 @@
   </AnchorPane>
 
   <!-- Clients Table -->
-  <AnchorPane layoutX="299.0" layoutY="504.0" prefHeight="586.0" prefWidth="1502.0" style="-fx-background-color: #365899;">
-    <Label layoutX="657.0" text="Klienten" textFill="WHITE">
+  <AnchorPane layoutX="225.0" layoutY="348.0" prefHeight="450.0" prefWidth="954.0" style="-fx-background-color: #365899;">
+    <Label layoutX="14.0" text="Klienten" textFill="WHITE">
       <font>
-        <Font name="Comic Sans MS Bold" size="36.0" />
+        <Font name="Comic Sans MS Bold" size="24.0" />
       </font>
     </Label>
-    <TableView fx:id="clientTable" layoutX="14.0" layoutY="51.0" prefHeight="477.0" prefWidth="1488.0">
+    <TableView fx:id="clientTable" layoutX="14.0" layoutY="51.0" prefHeight="322.0" prefWidth="860.0">
       <columns>
-        <TableColumn fx:id="clientIfaColumn" minWidth="0.0" prefWidth="277.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="IFA" />
-        <TableColumn fx:id="clientLastnameColumn" prefWidth="222.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
-        <TableColumn fx:id="clientFirstnameColumn" prefWidth="223.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Vorname" />
-        <TableColumn fx:id="dateOfBirthColumn" prefWidth="211.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Geburtstag" />
-        <TableColumn fx:id="clientGenderColumn" prefWidth="191.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Geschlecht" />
-        <TableColumn fx:id="clientNationalityColumn" prefWidth="192.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Nationalität" />
-        <TableColumn fx:id="clientRelationshipStatusColumn" prefWidth="144.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beziehungsstatus" />
+        <TableColumn fx:id="clientIfaColumn" minWidth="0.0" prefWidth="84.79994201660156" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="IFA" />
+        <TableColumn fx:id="clientLastnameColumn" prefWidth="80.800048828125" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Name" />
+        <TableColumn fx:id="clientFirstnameColumn" prefWidth="108.0" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Vorname" />
+        <TableColumn fx:id="dateOfBirthColumn" prefWidth="137.5999755859375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Geburtstag" />
+        <TableColumn fx:id="clientGenderColumn" prefWidth="111.199951171875" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Geschlecht" />
+        <TableColumn fx:id="clientNationalityColumn" prefWidth="106.4000244140625" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Nationalität" />
+        <TableColumn fx:id="clientRelationshipStatusColumn" prefWidth="113.5999755859375" style="-fx-alignment: center; -fx-font-size: 12; -fx-font-family: Comic Sans MS; -fx-font-weight: bold;" text="Beziehungsstatus" />
       </columns>
       <effect>
         <DropShadow />
