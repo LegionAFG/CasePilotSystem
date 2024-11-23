@@ -18,6 +18,8 @@ public class WindowsNaviService {
 
     private static final Logger LOGGER = Logger.getLogger(WindowsNaviService.class.getName());
 
+
+
     public enum Page {
         CLIENT("/com/badr/cp_project/Client.fxml"),
         HOME("/com/badr/cp_project/Home.fxml"),
