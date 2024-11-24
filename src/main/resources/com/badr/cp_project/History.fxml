@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HistoryController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.HistoryController">
     <AnchorPane layoutX="-3.0" prefHeight="642.0" prefWidth="326.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-19.0" layoutY="40.0" prefHeight="51.0" prefWidth="342.0" style="-fx-background-radius: 15;" text="Historie" textFill="#e9ebee">
             <font>

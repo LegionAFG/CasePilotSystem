@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.ClientController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #dfe3ee;" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.badr.cp_project.controller.ClientController">
     <!-- Top Action Bar -->
     <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1078.0" style="-fx-background-color: #365899; -fx-border-radius: 10;">
         <Button layoutX="280.0" layoutY="13.0" mnemonicParsing="false" onAction="#onDocumentButtonClick" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: #8b9dc3;" text="Historie +" textFill="WHITE">
