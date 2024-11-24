@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b75e2886-8ed4-42a4-8ad3-126bd82d5244" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Appointment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Client.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/File.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/File.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/History.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/History.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/badr/cp_project/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CP_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CP_Project-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/badrs/OneDrive/Desktop/WIFI/Projek_Arbeit_Badr/CP_Project_System&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/badrs/OneDrive/Desktop/CasePilotSystem-main&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>

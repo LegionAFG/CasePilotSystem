@@ -20,5 +20,6 @@ com\badr\cp_project\service\WindowsNaviService.class
 com\badr\cp_project\controller\ClientController.class
 com\badr\cp_project\service\DataLoadService$ActionWithResult.class
 com\badr\cp_project\model\File.class
+com\badr\cp_project\service\DataLoadService$ActionExecutionException.class
 com\badr\cp_project\service\NavigationService.class
 com\badr\cp_project\controller\HistoryController.class
